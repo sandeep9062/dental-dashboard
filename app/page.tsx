@@ -28,7 +28,7 @@ import { useGetNotificationsQuery } from "@/services/notificationApi";
 import Charts from "@/components/Charts";
 
 import NotificationsPanel from "@/components/NotificationsPanel";
-import QuickActions from "@/components/QuickActions";
+
 import FinancialSummaryCards from "@/components/FinancialSummaryCards"; // Added this line
 
 const { Title } = Typography;
@@ -187,7 +187,7 @@ export default function Home() {
               Here's a snapshot of your business performance.
             </p>
           </div>
-          <QuickActions />
+         
         </div>
 
         {/* Financial Summary Cards (New Section) */}

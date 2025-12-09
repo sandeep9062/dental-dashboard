@@ -27,7 +27,12 @@ export interface Lead {
     | "Diagnostics completed"
     | "Consultation completed"
     | "Lost / No response"
-    | "Follow-up required";
+    | "Follow-up required"
+    | "Treatment plan given"
+    | "Treatment plan approved"
+    | "Travel confirmed"
+    | "Treatment started"
+    | "Treatment completed";
   createdAt: string;
   name?: string;
   email?: string;
