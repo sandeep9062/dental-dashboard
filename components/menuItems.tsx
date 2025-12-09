@@ -14,7 +14,7 @@ import {
   MessageOutlined,
   BookOutlined,
   ApartmentOutlined,
-  SolutionOutlined,
+  SolutionOutlined, // Make sure SolutionOutlined is imported
   CustomerServiceOutlined,
   ReadOutlined,
 } from "@ant-design/icons";
@@ -74,6 +74,11 @@ export const getMenuItems = (collapsed: boolean): MenuProps["items"] => [
     <Link href="/pop-up-form">Pop Up Form</Link>,
     "pop-up-form",
     <QuestionCircleOutlined className="text-lg" />
+  ),
+  getItem( // New Leads Dashboard item
+    <Link href="/leads">Leads Dashboard</Link>,
+    "leads",
+    <SolutionOutlined className="text-lg" /> // Using SolutionOutlined as a placeholder, can be changed.
   ),
 
   { type: "divider" },

@@ -225,25 +225,7 @@ export default function Home() {
             <div className="p-4 bg-white rounded-lg shadow-md">
               <NotificationsPanel notifications={notifications} />
             </div>
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-              {dashboardStats.slice(4) // This slice might need adjustment depending on how many cards are left after removing the first 3
-                .map(({ label, value, icon, gradient }) => (
-                  <Card
-                    key={label}
-                    className={`relative overflow-hidden rounded-lg shadow-md border-0 text-white bg-gradient-to-r ${gradient} transition-all duration-300 hover:shadow-lg hover:-translate-y-1`}
-                  >
-                    <div className="p-4">
-                      <div className="flex items-center justify-between">
-                        <div>
-                          <p className="font-medium">{label}</p>
-                          <p className="text-2xl font-bold">{millify(value)}</p>
-                        </div>
-                        <div className="text-3xl opacity-50">{icon}</div>
-                      </div>
-                    </div>
-                  </Card>
-                ))}
-            </div>
+           
           </div>
         </div>
       </div>
